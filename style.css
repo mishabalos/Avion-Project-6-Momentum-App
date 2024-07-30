@@ -1,0 +1,144 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+  background-image: url(background-simple.jpg); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white; 
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center; 
+  font-family: "Montserrat", sans-serif;
+}
+
+#divDateAndTime {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#divDate {
+font-size: 25px;
+} 
+
+#divTime {
+font-size: 20px;
+} 
+
+#divName {
+  margin: 50px auto;
+  text-align: center; 
+}
+
+#divName, #askGoal, #updateName, #updateGoal, #divQuotes, #addQuoteForm {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+#divGoal {
+  display: none;
+}
+
+.inputText {
+  outline: 0px;
+  border: 0px;
+  background: transparent;
+  margin-top: 10px;
+  border-bottom: 3px solid white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 18px;
+  color: white;
+  width: 300px;
+}
+
+.inputText::placeholder {
+  text-align: center;
+}
+
+.button {
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  border-color: white; 
+  width: 100px;
+  height: 30px;
+}
+
+
+#divToDo {
+  display: none;
+}
+
+.to-do-item {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px; 
+  margin: 5px 0;
+  color: white;
+}
+
+.to-do-item input[type="checkbox"] {
+  margin-right: 10px; /* Space between checkbox and label */
+}
+
+#list {
+  display: flex;
+  flex-direction: column; /* Ensure items stack vertically */
+  text-align: left;
+}
+
+#listBox {
+  margin-right: 20px;
+  width: 150px;
+}
+
+#divQuotes {
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%; 
+}
+
+#newQuote {
+  width: 400px;
+  border-bottom: 1px solid white;
+  font-size: 10px;
+}
+
+#addQuoteButton {
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  border-color: white; 
+  width: 70px;
+  height: 20px;
+  font-size: 10px
+}
+
+

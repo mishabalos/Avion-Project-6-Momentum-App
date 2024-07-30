@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Momentum App Dashboard</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="divDateAndTime">
+  <div id="divDate"></div>
+  <div id="divTime"></div>
+    </div>
+
+  <div id="divName">
+    <h1 class="header" id="askName">Hello! What's your name?</h1>
+
+    <form id="updateName">
+      <input type="text" id="name" class="inputText" placeholder="Enter name" required />
+      <input class="button" type="submit" value="Update">
+    </form>
+  </div>
+
+  <div id="divGoal">
+    <h1 class="focus" id="askGoal">What is your main goal for today ______?</h1>
+
+    <form id="updateGoal">
+      <input type="text" id="focus" class="inputText" placeholder="Today I will..." required>
+      <input class="button" type="submit" value="Add">
+    </form>
+     <div id="displayGoal"> </div>
+  </div>
+ 
+
+  <div id="divToDo">
+    <h1 id="toDoHeader">Today I will...</h1>
+    <div id="list"></div>
+    <div id="toDoContainer">
+    <form id="toDoForm">
+      <input type="text" id="listBox" class="inputText" required />
+      <input class="button" type="submit" value="Add" />
+    </form>
+    </div>
+    </div>
+  
+  <div id="divQuotes">
+    <em><p id="randomQuotes">“All we have to decide is what to do with the time that is given us.” ― The Lord of the Rings</p></em>
+    <button class="button" id="changeQuote" value="Next Quote">Next Quote</button>
+
+    <form id="addQuoteForm">
+      <input type="text" id="newQuote" class="inputText" placeholder="Add your favorite movie quote" required />
+      <input id="addQuoteButton" type="submit" value="Add Quote">
+    </form>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
