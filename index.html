@@ -18,47 +18,49 @@
   <div id="divTime"></div>
     </div>
 
-  <div id="divName">
-    <h1 class="header" id="askName">Hello! What's your name?</h1>
+  <div id="container">
+    <div id="divName">
+      <h1 class="header" id="askName">Hello!<br>What's your name?</h1>
 
-    <form id="updateName">
-      <input type="text" id="name" class="inputText" placeholder="Enter name" required />
-      <input class="button" type="submit" value="Update">
-    </form>
-  </div>
-
-  <div id="divGoal">
-    <h1 class="focus" id="askGoal">What is your main goal for today ______?</h1>
-
-    <form id="updateGoal">
-      <input type="text" id="focus" class="inputText" placeholder="Today I will..." required>
-      <input class="button" type="submit" value="Add">
-    </form>
-     <div id="displayGoal"> </div>
-  </div>
- 
-
-  <div id="divToDo">
-    <h1 id="toDoHeader">Today I will...</h1>
-    <div id="list"></div>
-    <div id="toDoContainer">
-    <form id="toDoForm">
-      <input type="text" id="listBox" class="inputText" required />
-      <input class="button" type="submit" value="Add" />
-    </form>
+      <form id="updateName">
+        <input type="text" id="name" class="inputText" placeholder="Enter name" required />
+        <input id="update-btn" class="button" type="submit" value="Update">
+      </form>
     </div>
+
+    <div id="divGoal">
+      <h1 class="focus" id="askGoal">What is your main goal for today ______?</h1>
+
+      <form id="updateGoal">
+        <input type="text" id="focus" class="inputText" placeholder="Today I will..." required>
+        <input id="goal-btn" class="button" type="submit" value="Add">
+      </form>
+      <div id="displayGoal"> </div>
     </div>
   
-  <div id="divQuotes">
-    <em><p id="randomQuotes">“All we have to decide is what to do with the time that is given us.” ― The Lord of the Rings</p></em>
-    <button class="button" id="changeQuote" value="Next Quote">Next Quote</button>
 
-    <form id="addQuoteForm">
-      <input type="text" id="newQuote" class="inputText" placeholder="Add your favorite movie quote" required />
-      <input id="addQuoteButton" type="submit" value="Add Quote">
-    </form>
+    <div id="divToDo">
+      <h1 id="toDoHeader">Today I will...</h1>
+      <div id="list"></div>
+      <div id="toDoContainer">
+      <form id="toDoForm">
+        <input type="text" id="listBox" class="inputText" required />
+        <input class="button" type="submit" value="Add" />
+      </form>
+      </div>
+      </div>
+    
+    <div id="divQuotes">
+      <em><p id="randomQuotes">“All we have to decide is what to do with the time that is given us.” ― The Lord of the Rings</p></em>
+      <button class="button" id="changeQuote" value="Next Quote">Next Quote</button>
 
-  </div>
+      <form id="addQuoteForm">
+        <input type="text" id="newQuote" class="inputText" placeholder="Add your favorite movie quote" required />
+        <input id="addQuoteButton" type="submit" value="Add Quote">
+      </form>
+
+    </div>
+</div>
   <script src="script.js"></script>
 </body>
 

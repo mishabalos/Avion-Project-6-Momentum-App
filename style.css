@@ -3,13 +3,10 @@ html, body {
   width: 100%;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.montserrat-<uniquifier> {
+.montserrat-uniquifier {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
@@ -47,6 +44,10 @@ font-size: 20px;
   text-align: center; 
 }
 
+#update-btn, #goal-btn {
+  margin-top: 20px; 
+}
+
 #divName, #askGoal, #updateName, #updateGoal, #divQuotes, #addQuoteForm {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -69,6 +70,7 @@ font-size: 20px;
   font-size: 18px;
   color: white;
   width: 300px;
+  text-align: center;
 }
 
 .inputText::placeholder {
@@ -139,6 +141,47 @@ font-size: 20px;
   width: 70px;
   height: 20px;
   font-size: 10px
+}
+
+@media (max-width: 480px) {
+
+  #divDateAndTime {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  #divDate {
+    font-size: 20px;
+    } 
+    
+  #divTime {
+    font-size: 15px;
+    } 
+
+  #divName {
+    padding-top: 50px;
+  }
+  
+  #divName h1, #askGoal, #toDoHeader {
+    font-size: 30px; 
+    padding: 20px; 
+  }
+
+  em {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #addQuoteForm {
+   display: none; 
+  }
+
+  .button {
+    margin-top: 0px; 
+  }
+
+
 }
 
 
